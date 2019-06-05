@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Space X</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper" id="index">
+    <header id="header">
+      <img src="images/spacex_logo.png" alt="Space x logo" id="headerLogo">
+      <nav>
+        <div id="smallMenu">
+          <button onclick="menuOpen();">
+            <i id="menuHamburger" class="fas fa-bars"></i>
+            <i id="menuCross" class="fas fa-times"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <img src="images/spacex_landing.jpg" alt="image of Space X shuttle in orbit" id="spacexShuttle">
+    <article id="ourCompany">
+      <h1>Our Company..</h1>
+      <p>..designs, manufactures
+        and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology,
+        with the ultimate goal of enabling people to live on other planets.</p>
+    </article>
+    <article id="cheaper">
+      <h2>62,5% cheaper..</h2>
+      <p>..Manufacturing cost of SpaceX rockets compared to NASA rockets. SpaceX has through the engineered reusability
+        of their rockets made space travel easier and more affordable than ever before.</p>
+    </article>
+    <article id="founded">
+      <h2>Founded in 2002..</h2>
+      <p>..By CEO Elon Musk and CTO Tom Mueller in El Segundo, California. Starting at 160 employees in 2005 to nearly
+        7000 employees by 2017, SpaceX has grown by a multitude of 466 times in less than two decades.</p>
+    </article>
+    <article id="over100">
+      <h2>Over 100..</h2>
+      <p>..Contract launches, with the successful milestone retrieval of all major rocket components of the Falcon Heavy
+        in the recent ARABSAT-6A mission. SpaceX is on the forefront of commercial space flight, with the end goal of
+        manned missions to Mars. </p>
+    </article>
+    <footer id="footer">
+      <img src="images/spacex_logo.png" id="footer-logo" alt="SpaceX logo">
+      <div id="footer-links">
+        <a href="https://www.flickr.com/photos/spacex"><img src="images/flickr-logo.png"
+            alt="Image and link for social media"></a>
+        <a href="https://twitter.com/spacex"><img src="images/twitter-logo.png"
+            alt="Image and link for social media"></a>
+        <a href="https://www.youtube.com/spacex"><img src="images/yt-logo.png"
+            alt="Image and link for social media"></a>
+        <a href="https://www.instagram.com/spacex/"><img src="images/ig-logo.png"
+            alt="Image and link for social media"></a>
+      </div>
+      <p> © 2017 Space Exploration Technologies Corp. </p>
+    </footer>
+  </div>
+  <div id="menuModal" class="menuClosed">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="rockets.html">ROCKETS</a></li>
+      <li><a href="launches.html">LAUNCHES</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

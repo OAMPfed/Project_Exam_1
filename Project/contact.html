@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Space X Contact</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body onload="menuCollapse();">
+    <div class="wrapper" id="contact">
+        <header id="header">
+            <img src="images/spacex_logo.png" alt="Space x logo" id="headerLogo">
+            <nav>
+                <div id="smallMenu">
+                    <button onclick="menuOpen();">
+                        <i id="menuHamburger" class="fas fa-bars"></i>
+                        <i id="menuCross" class="fas fa-times"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <h1>Launch us an email</h1>
+            <p>We're eagerly awaiting your launch specifications!</p>
+            <form>
+                <p>Name:</p>
+                <input type="text" name="name" placeholder="Astronaut" id="nameId">
+                <p>E-mail:</p>
+                <input type="text" name="email" placeholder="Launch Station" id="emailId">
+                <p>Subject:</p>
+                <input type="text" name="subject" placeholder="Mission Name" id="subjectId">
+                <p>Message:</p>
+                <textarea id="textId" placeholder="Mission launch details..."></textarea>
+                <br />
+                <button type="submit" onclick="validateForm(); return false;">LAUNCH</button>
+            </form>
+        </section>
+        <footer id="footer">
+            <img src="images/spacex_logo.png" id="footer-logo" alt="SpaceX logo">
+            <div id="footer-links">
+                <a href="https://www.flickr.com/photos/spacex"><img src="images/flickr-logo.png"
+                        alt="Image and link for social media"></a>
+                <a href="https://twitter.com/spacex"><img src="images/twitter-logo.png"
+                        alt="Image and link for social media"></a>
+                <a href="https://www.youtube.com/spacex"><img src="images/yt-logo.png"
+                        alt="Image and link for social media"></a>
+                <a href="https://www.instagram.com/spacex/"><img src="images/ig-logo.png"
+                        alt="Image and link for social media"></a>
+            </div>
+            <p> © 2017 Space Exploration Technologies Corp. </p>
+        </footer>
+        <div id="menuModal" class="menuClosed">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rockets.html">ROCKETS</a></li>
+                <li><a href="launches.html">LAUNCHES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="validate.js"></script>
+</body>
+
+</html>

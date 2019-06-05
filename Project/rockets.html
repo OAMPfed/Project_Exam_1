@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Space X Launches</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body onload="menuCollapse();">
+    <div class="wrapper" id="rockets">
+        <header id="header">
+            <img src="images/spacex_logo.png" alt="Space x logo" id="headerLogo">
+            <nav>
+                <div id="smallMenu">
+                    <button onclick="menuOpen();">
+                        <i id="menuHamburger" class="fas fa-bars"></i>
+                        <i id="menuCross" class="fas fa-times"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <img src="images/dragon_shuttle.jpg" alt="Picture of the Dragon Shuttle" id="dragonShuttle">
+        <article id="dragon">
+            <h1>Dragon</h1>
+            <p>Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations. It
+                is
+                the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth.
+                Currently Dragon carries cargo to space, but it was designed from the beginning to carry humans.</p>
+        </article>
+        <img src="images/falcon_heavy.jpg" alt="image of the Falcon Heavy shuttle" id="falconShuttle">
+        <article id="falconHeavy">
+            <h2>Falcon Heavy</h2>
+            <p>Falcon Heavy is the most powerful operational rocket in the world by a factor of two. With the ability to
+                lift into orbit nearly 64 metric tons (141,000 lb)—a mass greater than a 737 jetliner loaded with
+                passengers, crew, luggage and fuel—Falcon Heavy can lift more than twice the payload of the next closest
+                operational vehicle, the Delta IV Heavy, at one-third the cost. Heavy was designed from the outset to
+                carry humans into space and restores the possibility of flying missions with crew to the Moon or Mars.
+            </p>
+        </article>
+        <footer id="footer">
+            <img src="images/spacex_logo.png" id="footer-logo" alt="SpaceX logo">
+            <div id="footer-links">
+                <a href="https://www.flickr.com/photos/spacex"><img src="images/flickr-logo.png"
+                        alt="Image and link for social media"></a>
+                <a href="https://twitter.com/spacex"><img src="images/twitter-logo.png"
+                        alt="Image and link for social media"></a>
+                <a href="https://www.youtube.com/spacex"><img src="images/yt-logo.png"
+                        alt="Image and link for social media"></a>
+                <a href="https://www.instagram.com/spacex/"><img src="images/ig-logo.png"
+                        alt="Image and link for social media"></a>
+            </div>
+            <p> © 2017 Space Exploration Technologies Corp. </p>
+        </footer>
+    </div>
+    <div id="menuModal" class="menuClosed">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="rockets.html">ROCKETS</a></li>
+            <li><a href="launches.html">LAUNCHES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
